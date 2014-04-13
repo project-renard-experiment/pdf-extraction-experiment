@@ -1,0 +1,9 @@
+#!/bin/sh
+
+CURDIR=`dirname "$0"`
+cd "$CURDIR/../.."
+
+DIR="evaluation/lapdftext"
+mkdir -p $DIR
+cd $DIR
+wget -c 'https://lapdftext.googlecode.com/files/EvaluationData1.zip' 'https://lapdftext.googlecode.com/files/EvaluationData2.zip'

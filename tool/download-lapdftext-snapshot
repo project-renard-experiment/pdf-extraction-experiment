@@ -1,0 +1,7 @@
+#!/bin/sh
+
+CURDIR=`dirname "$0"`
+cd "$CURDIR/.."
+
+wget -c "https://lapdftext.googlecode.com/files/lapdftext_unix_1_7_2-SNAPSHOT.tar.gz"
+aunpack lapdftext_unix_1_7_2-SNAPSHOT.tar.gz

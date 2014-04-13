@@ -1,0 +1,9 @@
+#!/bin/sh
+
+CURDIR=`dirname "$0"`
+cd "$CURDIR/../.."
+
+DIR="evaluation/GROTOAP"
+mkdir -p $DIR
+cd $DIR
+wget -c -nH --cut-dirs=2 --mirror -np -R html "https://svn.ceon.pl/research/GROTOAP/"
