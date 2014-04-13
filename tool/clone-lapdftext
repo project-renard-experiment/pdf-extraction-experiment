@@ -2,5 +2,6 @@
 
 CURDIR=`dirname "$0"`
 cd "$CURDIR/.."
+mkdir ext; cd ext
 
 git clone --recursive https://github.com/BMKEG/lapdftextProject.git lapdftext
