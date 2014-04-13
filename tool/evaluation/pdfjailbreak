@@ -10,5 +10,5 @@ cd $DIR
 wget -O datasets.html 'http://pdfjailbreak.com/datasets'
 wget -c 'http://pdfx.cs.man.ac.uk/serve/PMC_sample_1943.zip' \
   'http://msrc.idiginfo.org/sites/msrc.idiginfo.org/files/pdfopenaccess.zip' \
-  'http://pdfjailbreak.com/hackathon/data/CD004125.pdf' \
-  'http://pdfjailbreak.com/hackathon/data/CD005147.pdf' \
+  'http://www.bibliotecacochrane.com/pdf/CD004125.pdf' \
+  'http://www.bibliotecacochrane.com/pdf/CD005147.pdf' \
