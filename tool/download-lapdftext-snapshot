@@ -2,6 +2,10 @@
 
 CURDIR=`dirname "$0"`
 cd "$CURDIR/.."
+mkdir ext; cd ext
 
-wget -c "https://lapdftext.googlecode.com/files/lapdftext_unix_1_7_2-SNAPSHOT.tar.gz"
-aunpack lapdftext_unix_1_7_2-SNAPSHOT.tar.gz
+# from <http://bmkeg.github.io/lapdfInstallers.html>
+wget -c -U 'Mozilla/5.0 (X11; Linux i686; rv:13.0) Gecko/13. Firefox/13' \
+	--referer="http://bmkeg.github.io/lapdfInstallers.html" \
+	"https://s3-us-west-2.amazonaws.com/bmkeg/000_lapdf/lapdftext_unix_1_7_3-SNAPSHOT.tar.gz"
+aunpack lapdftext_unix_1_7_3-SNAPSHOT.tar.gz
