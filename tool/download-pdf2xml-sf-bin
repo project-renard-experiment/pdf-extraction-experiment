@@ -1,0 +1,14 @@
+#!/bin/sh
+
+CURDIR=`dirname "$0"`
+cd "$CURDIR/.."
+mkdir ext; cd ext
+
+# from <http://sourceforge.net/projects/pdf2xml/files/>
+mkdir -p pdf2xml-sf-2.1
+cd pdf2xml-sf-2.1
+mkdir Linux64; wget -O Linux64/pdftoxml     --content-disposition -c "http://sourceforge.net/projects/pdf2xml/files/binaries/Linux64%202.1/pdftoxml.exe/download"
+mkdir Linux32; wget -O Linux32/pdftoxml     --content-disposition -c "http://sourceforge.net/projects/pdf2xml/files/binaries/Linux32%202.1/pdftoxml.linux32.2.1.exe/download"
+mkdir MacOSX ; wget -O  MacOSX/pdftoxml     --content-disposition -c "http://sourceforge.net/projects/pdf2xml/files/binaries/Mac%20OSX/pdftoxml_osx/download"
+mkdir Win32  ; wget -O   Win32/pdftoxml.exe --content-disposition -c "http://sourceforge.net/projects/pdf2xml/files/binaries/Win32%202.1/pdftoxml.exe/download"
+find pdf2xml-sf-2.1 -type f -exec chmod u+x {} \;
