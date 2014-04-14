@@ -4,4 +4,5 @@ CURDIR=`dirname "$0"`
 cd "$CURDIR/.."
 mkdir ext; cd ext
 
+# apt-get install git-svn
 git svn clone --username=anonymous https://www.knowminer.at/svn/opensource/projects/code/trunk code-research
