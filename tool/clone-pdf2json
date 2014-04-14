@@ -1,0 +1,8 @@
+#!/bin/sh
+
+CURDIR=`dirname "$0"`
+cd "$CURDIR/.."
+mkdir ext; cd ext
+
+# apt-get install git-svn
+git svn clone --username=anonymous http://pdf2json.googlecode.com/svn/trunk/ pdf2json
