@@ -1,0 +1,21 @@
+#!/bin/sh
+
+CURDIR=`dirname "$0"`
+cd "$CURDIR/../.."
+
+DIR="evaluation/fonts"
+mkdir -p $DIR
+cd $DIR
+
+mkdir notMNIST
+cd notMNIST
+mkdir nfo; cd nfo
+wget -D lh3.ggpht.com,yaroslavvb.com,2.bp.blogspot.com -A png,html -H -k -nd -p 'http://yaroslavvb.blogspot.com/2011/09/notmnist-dataset.html' 'http://yaroslavvb.blogspot.com/2011/11/shapecatcher.html'
+cd ..
+wget -c -nH --cut-dirs=1 --mirror -np  "http://yaroslavvb.com/upload/notMNIST/"
+cd ..
+
+mkdir difficult_fonts
+cd difficult_fonts
+wget -c 'http://yaroslavvb.com/upload/difficult_fonts.zip'
+cd ..
