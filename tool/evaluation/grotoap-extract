@@ -1,0 +1,9 @@
+#!/bin/sh
+
+CURDIR=`dirname "$0"`
+cd "$CURDIR/../.."
+
+DIR="evaluation/GROTOAP"
+cd $DIR
+aunpack pdfs.zip
+aunpack xmls.zip
