@@ -1,0 +1,10 @@
+#!/bin/sh
+
+CURDIR=`dirname "$0"`
+cd "$CURDIR/../.."
+
+DIR="evaluation/lapdftext"
+mkdir -p $DIR
+cd $DIR
+aunpack EvaluationData1.zip
+aunpack EvaluationData2.zip
