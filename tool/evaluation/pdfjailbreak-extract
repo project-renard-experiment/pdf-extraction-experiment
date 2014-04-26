@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# see <http://pdfjailbreak.com/datasets>
+CURDIR=`dirname "$0"`
+cd "$CURDIR/../.."
+
+DIR="evaluation/pdfjailbreak"
+cd $DIR
+aunpack pdfopenaccess.zip
+aunpack PMC_sample_1943.zip
