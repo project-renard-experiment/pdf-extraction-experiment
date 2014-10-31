@@ -5,10 +5,10 @@ install/test
 		# # many edits
 		# mvn compile
 		./tool/download-lapdftext-snapshot
-		INSTALL4J_JAVA_HOME_OVERRIDE="/usr/lib/jvm/java-6-openjdk-amd64/jre" ./ext/lapdftext_unix_1_7_3-SNAPSHOT/lapdftext/extractFullText `readlink -f test-pdf/hearst98-SVMtutorial.pdf`
-		INSTALL4J_JAVA_HOME_OVERRIDE="/usr/lib/jvm/java-6-openjdk-amd64/jre" ./ext/lapdftext_unix_1_7_3-SNAPSHOT/lapdftext/blockifyClassify `readlink -f test-pdf/hearst98-SVMtutorial.pdf`
-		INSTALL4J_JAVA_HOME_OVERRIDE="/usr/lib/jvm/java-6-openjdk-amd64/jre" ./ext/lapdftext_unix_1_7_3-SNAPSHOT/lapdftext/blockify `readlink -f test-pdf/hearst98-SVMtutorial.pdf`
-		INSTALL4J_JAVA_HOME_OVERRIDE="/usr/lib/jvm/java-6-openjdk-amd64/jre" ./ext/lapdftext_unix_1_7_3-SNAPSHOT/lapdftext/imagifySections `readlink -f test-pdf/hearst98-SVMtutorial.pdf`
+		INSTALL4J_JAVA_HOME_OVERRIDE="/usr/lib/jvm/java-7-openjdk-amd64/jre/" ./ext/lapdftext_unix_1_7_4-SNAPSHOT/lapdftext/extractFullText `readlink -f test-pdf/hearst98-SVMtutorial.pdf`
+		INSTALL4J_JAVA_HOME_OVERRIDE="/usr/lib/jvm/java-7-openjdk-amd64/jre/" ./ext/lapdftext_unix_1_7_4-SNAPSHOT/lapdftext/blockifyClassify `readlink -f test-pdf/hearst98-SVMtutorial.pdf`
+		INSTALL4J_JAVA_HOME_OVERRIDE="/usr/lib/jvm/java-7-openjdk-amd64/jre/" ./ext/lapdftext_unix_1_7_4-SNAPSHOT/lapdftext/blockify `readlink -f test-pdf/hearst98-SVMtutorial.pdf`
+		INSTALL4J_JAVA_HOME_OVERRIDE="/usr/lib/jvm/java-7-openjdk-amd64/jre/" ./ext/lapdftext_unix_1_7_4-SNAPSHOT/lapdftext/imagifySections `readlink -f test-pdf/hearst98-SVMtutorial.pdf`
 	pdf2json
 		./tool/clone-pdf2json
 		cd ext/pdf2json/
