@@ -7,7 +7,7 @@ use Path::Class;
 
 our $lapdftext_path;
 
-sub blockify_data {
+sub blockify_xml_data {
 	my ($self, $pdf_file) = @_;
 	my $dir = Path::Class::tempdir(CLEANUP => 1);
 	my $blockify = dir($lapdftext_path)->file('blockify');
