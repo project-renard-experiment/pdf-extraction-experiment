@@ -19,14 +19,14 @@ my $doc_xml_file ;#= DLA::Util->blockify_xml_file('test-pdf/hearst98-SVMtutorial
 $doc_xml_file = 'test-pdf/hearst98-SVMtutorial_lapdf.xml';
 my $doc = DLA::Blockify::Document->new( file => $doc_xml_file );
 use DDP; p $doc;
-my $fonts = $doc->fonts;
+#my $fonts = $doc->font_map;
+use DDP; p $doc->get_font_by_id(31)->name;
 #my @names = map { $_->name } @$fonts;
 #use DDP; p @names;
 my $pages = $doc->pages;
+
 my @t = map { $_->text} @{ $pages->[0]->chunks->[0]->words };
 use DDP; p @t;
-#my $dom = XML::LibXML->load_xml(string => $d);
-#use DDP; p $dom;
-#use DDP; p $d;
 
+use DDP; p $pages->[0]->chunks->[0];
 
