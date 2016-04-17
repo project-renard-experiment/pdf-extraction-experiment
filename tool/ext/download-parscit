@@ -1,0 +1,9 @@
+#!/bin/sh
+
+CURDIR=`dirname "$0"`
+cd "$CURDIR/../.."
+mkdir ext; cd ext
+
+# from <http://wing.comp.nus.edu.sg/parsCit/>
+wget -c 'http://wing.comp.nus.edu.sg/parsCit/parscit-130908.zip'
+aunpack -X parscit-130908 parscit-130908.zip
